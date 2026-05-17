@@ -85,9 +85,7 @@ The models are applied to a **laptop price prediction dataset**, and evaluated u
 - Lasso regularization improves sparsity without major loss in accuracy
 - RAM is the strongest single predictor of laptop price
 
----
-
-##  Project Structure
+---##  Project Structure
 
 ```bash
 regression_project/
@@ -120,19 +118,3 @@ y_pred = model.predict(X_test)
 
 # Evaluate
 print(model.metrics())
- Key Learning Outcomes
-Understanding gradient descent behavior in multivariate regression
-Derivation and implementation of normal equations
-Trade-offs between bias and variance in feature selection
-Impact of L1 vs L2 regularization on coefficient stability
-Statistical interpretation of regression outputs
- Notes
-This project prioritizes mathematical understanding over library abstraction
-scikit-learn is used only for preprocessing, not model training
-All regression logic is implemented manually using NumPy
- Future Improvements
-Extend to polynomial regression
-Add cross-validation pipeline
-Compare with tree-based models (Random Forest, XGBoost)
-Deploy as API (FastAPI / Flask)
-Add interactive dashboard (Streamlit)
